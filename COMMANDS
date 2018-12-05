@@ -16,5 +16,29 @@ sudo file -s /dev/<storage device alias>
 - this will list information about the given storage device
 - for example: filesystem format (fat32, ext4, ...), total size, and so on.
 
+/etc/fstab
+- this file controls where disks will be mounted on boot
+
 htop
 - like top but with colors!
+
+cut -d: -f1 /etc/group | sort
+- list out all existing groups and sort them in lexographical order
+
+cut -d: -f1 /etc/passwd | sort
+- list out all existing users and sort them in lexographical order
+
+sudo groupadd <new group name>
+- create a new user-group
+
+sudo usermod -a -G <group> <user>
+- add <user> to the group <group>
+
+grep <groupname> /etc/group
+- give a list of users included in the given groupname
+
+sudo chgrp -R <group> <full-path>
+- give all members of <group> access to the file/directory at <full-path>
+
+sudo chmod g+rw <full-path>
+- give all members of the target's allowed groups R/W permissions
