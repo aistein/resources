@@ -1,0 +1,20 @@
+lscpu
+- yeilds generic information about the processor information of this machine
+
+apt-cache search keyword
+- search for a package name and list out any matches
+- the search keyword can be all or part of a package name or any words used in its description
+
+lsblk
+- list information about attached physical storage devices and their partitions
+
+sudo chown <user>:<user> <directory/file>
+- chown will set the owner and group for the given target file/directory to the given user
+- this is required to enable non-root reading/writing from/to (for example) an external disk mounted at some folder
+
+sudo file -s /dev/<storage device alias>
+- this will list information about the given storage device
+- for example: filesystem format (fat32, ext4, ...), total size, and so on.
+
+htop
+- like top but with colors!
