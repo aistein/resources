@@ -40,5 +40,5 @@ grep <groupname> /etc/group
 sudo chgrp -R <group> <full-path>
 - give all members of <group> access to the file/directory at <full-path>
 
-sudo chmod g+rw <full-path>
+sudo chmod -R g+rw <full-path>
 - give all members of the target's allowed groups R/W permissions
