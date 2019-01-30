@@ -42,3 +42,6 @@ sudo chgrp -R <group> <full-path>
 
 sudo chmod -R g+rw <full-path>
 - give all members of the target's allowed groups R/W permissions
+
+cat <csv-file-path> | sort -k1 -n
+- sort the lines of the CSV file numerically based on the values of the first column (prints to stdout)
