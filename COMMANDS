@@ -45,3 +45,6 @@ sudo chmod -R g+rw <full-path>
 
 cat <csv-file-path> | sort -k1 -n
 - sort the lines of the CSV file numerically based on the values of the first column (prints to stdout)
+
+w
+- display information about all users logged in to the system right now
