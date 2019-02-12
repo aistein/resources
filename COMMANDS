@@ -48,3 +48,15 @@ cat <csv-file-path> | sort -k1 -n
 
 w
 - display information about all users logged in to the system right now
+
+-- how to make a swap area
+sudo fallocate -l 50G /data/.swap
+- "/data/.swap" is an arbitrary file location (could be attached disk)... make sure it has the space you want
+sudo chmod 600 /data/.swap
+sudo chown root:root /data/.swap
+sudo mkswap /data/.swap
+- take note of the UUID thats created here, this will later be put into /etc/fstab
+sudo swapon /data/.swap
+sudo swapon --show
+- now add the following line to /etc/fstab
+UUID="< given number >" swap swap defaults,nofail 0 0
