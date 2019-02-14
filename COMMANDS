@@ -60,3 +60,9 @@ sudo swapon /data/.swap
 sudo swapon --show
 - now add the following line to /etc/fstab
 UUID="< given number >" swap swap defaults,nofail 0 0
+-- how to remove swap area
+cat /proc/swaps
+- list the swap areas and some info about them
+sudo swapoff -a
+- immediately shut off all swap areas
+- now just remove any matching reference in /etc/fstab
