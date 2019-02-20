@@ -3,3 +3,6 @@ exec > run.log 2>&1
 
 exec &>/dev/tty
 - redirects all commands back to the terminal
+
+basename -- $fullpath
+- get just the filename (with extension) from the full-path to that file
