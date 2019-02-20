@@ -1,0 +1,5 @@
+exec > run.log 2>&1
+- redirects all commands from stdout and stderr to "run.log"
+
+exec &>/dev/tty
+- redirects all commands back to the terminal
