@@ -1,3 +1,6 @@
+ls -la /proc/$$/fd
+- list all the open file descriptors for the current shell process
+
 lscpu
 - yeilds generic information about the processor information of this machine
 
